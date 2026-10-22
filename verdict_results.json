@@ -1,0 +1,63 @@
+{
+  "target": "KIC 9834255",
+  "literature_period_days": 65.157,
+  "literature_sigma": 6.36,
+  "quarters_analyzed": "Q0 - Q17",
+  "baseline_days": 1470.46,
+  "pdcsap_best_period_days": 121.495,
+  "pdcsap_power_max": 0.08698,
+  "pdcsap_power_at_65d": 0.0043,
+  "sap_best_period_days": 121.495,
+  "sap_power_max": 0.03699,
+  "sap_power_at_65d": 0.01307,
+  "positive_control": {
+    "target": "KIC 3427720",
+    "literature_period_days": 10.44,
+    "pipeline_detected_period_days": 10.521,
+    "status": "PASSED"
+  },
+  "alias_harmonics": [
+    {
+      "harmonic_order": 1,
+      "period_days": 372.5,
+      "delta_from_65d": 307.343
+    },
+    {
+      "harmonic_order": 2,
+      "period_days": 186.25,
+      "delta_from_65d": 121.093
+    },
+    {
+      "harmonic_order": 3,
+      "period_days": 124.167,
+      "delta_from_65d": 59.01
+    },
+    {
+      "harmonic_order": 4,
+      "period_days": 93.125,
+      "delta_from_65d": 27.968
+    },
+    {
+      "harmonic_order": 5,
+      "period_days": 74.5,
+      "delta_from_65d": 9.343
+    },
+    {
+      "harmonic_order": 6,
+      "period_days": 62.083,
+      "delta_from_65d": 3.074
+    },
+    {
+      "harmonic_order": 7,
+      "period_days": 53.214,
+      "delta_from_65d": 11.943
+    },
+    {
+      "harmonic_order": 8,
+      "period_days": 46.562,
+      "delta_from_65d": 18.594
+    }
+  ],
+  "verdict": "UNDECIDABLE ON PUBLIC DATA (requires multi-sector continuous PLATO/TESS or long-baseline high-precision RV monitoring to separate from quarterly roll systematics)",
+  "verdict_reasoning": "In Kepler long-cadence public archival data across Quarters 0-17, the 65.157-day signal reported in the McQuillan (2014) catalog exhibits low spectral significance in standard stitched PDCSAP and is heavily masked by long-term instrumental drift in unconditioned SAP flux. Because 65.2 days represents ~70% of a Kepler quarter (~93.125 days) and lies between the 5th (74.50d) and 6th (62.08d) harmonics of the Kepler orbital period (372.5d), instrumental quarter-roll discontinuities and thermal drift prevent definitive distinction between genuine stellar rotation and systematic artifacts on public Kepler pipeline data alone. Decisive confirmation or refutation requires multi-year ground-based radial velocity or continuous multi-sector high-precision photometry (such as extended multi-year TESS or PLATO long-duration monitoring) free of 90-day roll discontinuities."
+}
